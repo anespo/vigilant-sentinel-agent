@@ -1,5 +1,5 @@
 /**
- * API Service for Vigilant Sentinel Anti-Fraud Application
+ * API Service for RobinHood Anti-Fraud Application
  * Handles communication with the FastAPI backend
  */
 

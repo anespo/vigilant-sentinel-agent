@@ -1,5 +1,5 @@
 """
-Mock Case Manager Agent for Vigilant Sentinel
+Mock Case Manager Agent for RobinHood
 Simulates case investigation assistance
 """
 

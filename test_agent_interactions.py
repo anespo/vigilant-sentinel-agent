@@ -29,7 +29,7 @@ def generate_test_transaction():
         return None
 
 def main():
-    print("🛡️ Vigilant Sentinel Agent Interaction Demo")
+    print("🏹 RobinHood Agent Interaction Demo")
     print("=" * 50)
     print("This script will generate test transactions to demonstrate")
     print("real-time agent interactions and fraud detection pipeline.")

@@ -1,4 +1,4 @@
-# Vigilant Sentinel Anti-Fraud Application Setup
+# RobinHood Anti-Fraud Application Setup
 
 This guide will help you set up and run the complete anti-fraud application using Strands Agents and AWS services.
 

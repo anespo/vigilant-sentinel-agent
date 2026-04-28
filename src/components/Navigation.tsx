@@ -29,7 +29,7 @@ export const Navigation = () => {
             <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
               <Shield className="w-5 h-5 text-white" />
             </div>
-            <h1 className="text-xl font-bold">Vigilant Sentinel</h1>
+            <h1 className="text-xl font-bold">RobinHood</h1>
           </div>
 
           {/* Navigation Items */}

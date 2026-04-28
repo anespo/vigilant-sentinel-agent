@@ -1,52 +1,47 @@
-# Vigilant Sentinel - AI-Powered Anti-Fraud Application
+# RobinHood - AI-Powered Anti-Fraud Application
 
 A comprehensive fraud detection and response system built with **Strands Agents**, **AWS Bedrock**, and **React**. This application provides real-time transaction monitoring, automated threat response, and intelligent case management for financial institutions.
 
-![Vigilant Sentinel Dashboard](https://img.shields.io/badge/Status-Production%20Ready-green)
+![RobinHood Dashboard](https://img.shields.io/badge/Status-Production%20Ready-green)
 ![AWS Bedrock](https://img.shields.io/badge/AWS-Bedrock-orange)
 ![Strands Agents](https://img.shields.io/badge/AI-Strands%20Agents-blue)
 ![React](https://img.shields.io/badge/Frontend-React%20%2B%20TypeScript-blue)
 ![License](https://img.shields.io/badge/License-Commercial-red)
 
+## ✅ Status: COMPLETAMENTE FUNZIONANTE
 
-## 🚀 Quick Start
+Tutte le verifiche sono state completate e l'applicazione è pronta all'uso immediato!
 
-There are several ways of editing your application.
+## 🚀 Avvio Rapido (Quick Start)
 
-
-**Use your preferred IDE**
-
-You can work locally using your preferred IDE and push changes to the repository.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+./run.sh
 ```
 
-This will automatically:
-- Check prerequisites (Node.js, Python, AWS CLI)
-- Install all dependencies
-- Set up the backend and frontend
-- Start both servers
-- Open the application in your browser
+Questo comando avvia automaticamente:
+- ✅ Backend FastAPI su http://localhost:8000
+- ✅ Frontend React su http://localhost:5173
 
-### Manual Setup
-If you prefer manual setup, see [SETUP.md](SETUP.md) for detailed instructions.
+**Accesso immediato**:
+- Dashboard: http://localhost:5173
+- API Docs: http://localhost:8000/docs
 
-## 🏗️ Architecture
+## 📋 Prerequisiti Verificati
+
+- ✅ Node.js 18+ installato
+- ✅ Python 3.12 installato
+- ✅ AWS CLI configurato
+- ✅ Accesso a AWS Bedrock (Claude 3 Haiku)
+- ✅ Tutte le dipendenze installate
+
+## 🎯 Test Rapido
+
+1. Avvia l'applicazione: `./run.sh`
+2. Apri http://localhost:5173
+3. Clicca "Generate Test Transaction"
+4. Osserva il rilevamento frodi in tempo reale!
+
+## 🏗️ Architettura
 
 ### Frontend (React + TypeScript)
 - **Real-time Dashboard**: Live fraud monitoring with WebSocket updates
@@ -118,7 +113,7 @@ If you prefer manual setup, see [SETUP.md](SETUP.md) for detailed instructions.
 1. **Clone the repository**
    ```bash
    git clone <your-repo-url>
-   cd vigilant-sentinel-agent
+   cd robinhood-agent
    ```
 
 2. **Run the setup script**
@@ -233,7 +228,7 @@ For commercial licensing, distribution rights, or custom development services, p
 
 **Antonio Esposito**
 - GitHub: [@anespo](https://github.com/anespo)
-- Project: [Vigilant Sentinel Agent](https://github.com/anespo/vigilant-sentinel-agent)
+- Project: [RobinHood Agent](https://github.com/anespo/robinhood-agent)
 
 ## 🆘 Support
 

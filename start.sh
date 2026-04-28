@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Vigilant Sentinel Anti-Fraud Application Startup Script
+# RobinHood Anti-Fraud Application Startup Script
 
 set -e
 
-echo "🛡️  Starting Vigilant Sentinel Anti-Fraud Application"
+echo "🏹 Starting RobinHood Anti-Fraud Application"
 echo "=================================================="
 
 # Colors for output

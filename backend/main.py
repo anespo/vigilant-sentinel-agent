@@ -1,5 +1,5 @@
 """
-FastAPI Backend for Vigilant Sentinel Anti-Fraud Application
+FastAPI Backend for RobinHood Anti-Fraud Application
 Integrates Strands Agents with AWS services for real-time fraud detection
 """
 
@@ -225,7 +225,7 @@ async def broadcast_response(response_data: Dict[str, Any]):
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup
-    logger.info("Starting Vigilant Sentinel Anti-Fraud Application")
+    logger.info("Starting RobinHood Anti-Fraud Application")
     
     # Start background tasks
     transaction_task = asyncio.create_task(process_transaction_queue())
@@ -240,7 +240,7 @@ async def lifespan(app: FastAPI):
 
 # Initialize FastAPI app
 app = FastAPI(
-    title="Vigilant Sentinel Anti-Fraud API",
+    title="RobinHood Anti-Fraud API",
     description="AI-powered fraud detection and response system using Strands Agents",
     version="1.0.0",
     lifespan=lifespan,
@@ -281,7 +281,7 @@ async def health_check():
 async def root():
     """Health check endpoint"""
     return {
-        "message": "Vigilant Sentinel Anti-Fraud API",
+        "message": "RobinHood Anti-Fraud API",
         "status": "operational",
         "timestamp": datetime.now().isoformat()
     }
@@ -338,7 +338,7 @@ async def analyze_transaction(transaction: TransactionData, background_tasks: Ba
         logger.info(f"Stored alert. Total active alerts: {len(app_state.active_alerts)}")
         
         # Also add to queue for background processing
-        await app_state.transaction_queue.put(transaction_data)
+        await app_state.transaction_queue.put(transaction.dict())
         
         return {
             "status": "accepted",

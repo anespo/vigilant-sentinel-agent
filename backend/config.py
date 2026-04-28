@@ -1,5 +1,5 @@
 """
-Configuration for Vigilant Sentinel backend
+Configuration for RobinHood backend
 """
 import os
 from typing import List
@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     """Application settings with environment variable support"""
     
     # Application
-    app_name: str = "Vigilant Sentinel"
+    app_name: str = "RobinHood"
     debug: bool = True
     log_level: str = "INFO"
     
