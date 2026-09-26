@@ -9,6 +9,10 @@ from datetime import datetime
 from typing import Dict, List, Any, Optional
 from pydantic import BaseModel
 import boto3
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+from config import settings
 
 # Configure logging for detailed agent output
 logging.basicConfig(
@@ -45,7 +49,7 @@ def get_bedrock_client():
     import os
     return boto3.client(
         'bedrock-runtime',
-        region_name=os.getenv('BEDROCK_REGION', 'eu-west-1')
+        region_name=settings.bedrock_region
     )
 
 def call_bedrock_directly(prompt: str) -> str:
@@ -63,7 +67,7 @@ def call_bedrock_directly(prompt: str) -> str:
         })
         
         response = client.invoke_model(
-            modelId=os.getenv('BEDROCK_MODEL_ID', 'anthropic.claude-3-haiku-20240307-v1:0'),
+            modelId=settings.bedrock_model_id,
             body=body
         )
         

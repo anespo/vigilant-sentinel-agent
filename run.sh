@@ -21,6 +21,9 @@ cleanup() {
 
 trap cleanup INT TERM
 
+# Set PATH to include Homebrew binaries
+export PATH="/opt/homebrew/bin:$PATH"
+
 # Start backend
 echo "🚀 Starting backend..."
 cd backend
@@ -40,6 +43,7 @@ echo ""
 echo "✅ Application running!"
 echo "Frontend: http://localhost:5173"
 echo "Backend:  http://localhost:8000"
+echo "API Docs: http://localhost:8000/docs"
 echo ""
 echo "Press Ctrl+C to stop"
 

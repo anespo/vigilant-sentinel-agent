@@ -54,8 +54,9 @@ class Settings(BaseSettings):
     metrics_port: int = 9090
     
     class Config:
-        env_file = ".env"
+        env_file = "../.env"
         case_sensitive = False
+        extra = "ignore"  # Ignore extra environment variables
 
 
 # Global settings instance
